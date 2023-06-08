@@ -1,0 +1,12 @@
+Each node in an xml parsed by etree is an Element:
+Elements have the following attributes:
+.tag - the name of the element
+.attrib - a dictionary of the attributes inside the tag
+.text - the content of the element
+(e.g.) in the case <name type=first lang=gb>ernie</name>
+.tag = name
+.attrib = {'type': 'first', 'lang': 'gb'}
+.text = ernie
+
+After parsing a tree into an object called 'tree' the xml data can be traversed from the root:
+root = tree.getroot()
